@@ -50,12 +50,9 @@ print ("Unique values in Y: {}".format(len(counter_y.keys())))
 quantization_bins = list(counter_x.keys())
 quantization_bins.sort()
 quantization_bins = np.array(quantization_bins)
-# plt.figure()
-# plt.imshow(mnist.data[20000].reshape((28, 28)))
-# plt.show()
-# plt.close()
+
 print ("Train data: {}, Train labels: {}\nTest data: {}, Test Labels: {}".format(X_train.shape, y_train.shape, X_test.shape, y_test.shape))
-# exit()
+
 if algorithm == 'randomforest':
     # clf = RandomForestClassifier(n_estimators=20, n_jobs=-1)
     clf = RandomForestClassifier(n_estimators=30, n_jobs=-1)
